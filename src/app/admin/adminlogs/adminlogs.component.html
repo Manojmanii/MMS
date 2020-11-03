@@ -1,0 +1,34 @@
+<!-- <div *ngFor='let m of '>
+DOB
+        {{m.file}}gender study
+collegename
+marks
+phone   email
+</div> -->
+
+
+
+<div *ngFor="let m of empform">
+<div class="container jumbotron mt-5">
+    <div class="card">
+        <div class="card-header">
+           <!-- {{v.jobtitle}} -->  jobtitle
+        </div>
+        <div class="card-body">
+            <div class="row"><h6 class="col-sm-2">Name :</h6> <i class="col-sm-5">{{m.name}}</i></div> 
+            <div class="row"><h6 class="col-sm-2">Father Name :</h6><i class="col-sm-5">{{m.fathername}}</i></div> 
+            <div class="row"><h6 class="col-sm-2">DOB :</h6><i class="col-sm-3">{{m.DOB}}</i></div>
+             <div class="row"><h6 class="col-sm-2">Gender :</h6><i class="col-sm-2">{{m.gender}}</i></div>
+             <div class="row"><h6 class="col-sm-2">Study :</h6><i class="col-sm-2">{{m.study}}</i></div>
+             <div class="row"><h6 class="col-sm-2">Branch :</h6><i class="col-sm-2">{{m.branch}}</i></div>  
+             <div class="row"><h6 class="col-sm-2">College Name :</h6><i class="col-sm-7">{{m.collegename}}</i>  </div>
+              <div class="row"><h6 class="col-sm-2">Marks</h6><i class="col-sm-2">{{m.marks}}</i></div>
+             <div class="row"><h6 class="col-sm-2">Phone No :</h6><i class="col-sm-2">{{m.phone}}</i></div>
+              <div class="row"><h6 class="col-sm-2">Email Id :</h6><i class="col-sm-7">{{m.email}}</i></div>
+              <div class="row"><h6 class="col-sm-2">Resume :</h6><i class="col-sm-2">{{m.image}}</i></div>
+            </div>
+        
+        </div>
+    </div>
+  </div>
+

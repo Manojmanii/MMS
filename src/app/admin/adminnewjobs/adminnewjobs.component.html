@@ -1,0 +1,32 @@
+<div class="container jumbotron">
+
+<form #ref="ngForm"   (ngSubmit)="submitjobform(ref.value)"  >
+<div class="row">
+        <label class="col-2" for="jt">Jobtitle:</label>
+         <input class="col-3" type="text" id="jt" name="jobtitle" ngModel>
+</div>
+<br>
+<div class="row">
+         <label class="col-2" for="qt">Qualification:</label>
+         <input class="col-3" type="text" id="qt" name="Qualification" ngModel>
+</div>  <br>
+<div class="row">
+    <label class="col-2" for="lo">Location:</label>
+    <input class="col-3" type="text" id="lo" name="Location" ngModel>
+</div>  <br>
+
+<div class="row">
+    <label class="col-2" for="pc">Package:</label>
+    <input class="col-3" type="text" id="pc" name="Package" ngModel>
+</div>  <br>
+<div class="row">
+           <label class="col-2" for="dt">Description:</label>
+           <textarea name="description" id="dt" cols="100" rows="5" ngModel ></textarea>
+</div>  <br> <br>
+
+ <div class="text-center  ">
+     <button class="bg-info" type="submit" >POST</button>
+ </div>
+
+</form>
+</div>

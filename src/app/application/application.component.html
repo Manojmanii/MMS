@@ -1,0 +1,85 @@
+<div class="design">
+
+<h3 class="text-center mt-4" style="font:bolder;text-decoration-line: underline;">Application Form</h3>
+
+<form #ref="ngForm" (ngSubmit)="submitmodal(ref.value)">
+    <mat-horizontal-stepper linear class="main container mt-5" >
+      <mat-step class="text-white" label="Personal Details"  >
+        <p >Step 1:</p>
+        <div class="row">
+           <label class="col-2" for="en">Full Name:</label>
+           <input class="col-3" type="text" id="en" name="name" ngModel >
+       </div> <br>
+       <div class="row">
+        <label class="col-2" for="fn">Father Name:</label>
+        <input class="col-3" type="text" id="fn" name="fathername" ngModel >
+    </div> <br>
+    <div class="row">
+        <label class="col-2" for="dob">Date of Birth:</label>
+        <input class="col-3" type="date" id="dob" name="DOB" ngModel >
+    </div> <br>
+    <div class="row">
+        <label class="col-sm-2" for="">Gender: </label>
+        <input  type="radio" id="ml" name="gender" ngModel>
+        <label class="ml-2" for="ml"> Male</label>
+        <input class="ml-3" type="radio" id="fm" name="gender" ngModel>
+        <label class="ml-2" for="fm">Female</label>
+         </div>   <br>
+       <div class="text-center">
+        <button class="btn-danger "  type="button" mat-button matStepperNext> Next</button>
+      </div>
+      </mat-step> <br>
+      <mat-step  label="Education Details">
+      <p> Step 2:</p> <br>
+        <div class="row">
+          <label class="col-2" for="ed">Education:</label>
+          <input  class="col-3" type="text" id="ed" name="study" ngModel >
+          <label class="col-1" for="br">Branch:</label>
+          <select class="col-2" name="branch" id="br"  ngModel>
+              <option value="EEE">EEE</option>
+              <option value="MEC">MEC</option>
+              <option value="ECE">ECE</option>
+              <option value="CSE">CSE</option>
+            </select>
+      </div> <br>
+      <div class="row">
+        <label class="col-2" for="cg">College Name:</label>
+        <input class="col-4" type="text" id="cg" name="collegename" ngModel >
+    </div> <br>
+    <div class="row">
+        <label class="col-2" for="mk">Graduation Marks:</label>
+        <input class="col-3" type="number" id="mk" name="marks" ngModel >
+    </div> <br>
+    <div class="row">
+        <label class="col-2" for="ph">Phone Number :</label>
+        <input class="col-3" type="number" id="ph" name="phone" ngModel >
+    </div> <br>
+    <div class="row">
+        <label class="col-2" for="em">Email :</label>
+        <input class="col-3" type="text" id="em" name="email" ngModel >
+    </div> <br> <br>
+        <div class="text-center">
+          <button class="btn-danger mr-5  " type="button" mat-button matStepperPrevious> Back</button>
+          <button class="btn-danger " type="button" mat-button matStepperNext> Next</button> 
+      </div>
+      </mat-step>
+
+            <mat-step  label="Upload Resume" >
+             <p>Step -3:</p>
+              <div class="row">
+                <label class="col-4" for="fl">Upload Resume:</label>
+                <input  class="col-4" type="file" id="fl" name="image" ngModel>
+            </div> <br> <br> <br>
+              <div class="" >
+               <button class="btn-danger " type="button" mat-button matStepperPrevious> Back</button>
+             </div>
+             <div class="text-center">    
+                 <button type="submit"  mat-button style="background-color: green; color: honeydew;" id="n" >Apply</button>
+            </div>
+
+</mat-step>
+
+</mat-horizontal-stepper> 
+
+</form>
+</div>

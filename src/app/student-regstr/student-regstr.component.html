@@ -1,0 +1,154 @@
+ <!-- <mat-horizontal-stepper linear>
+  <mat-step label="Personal details" completed=true>
+    <p>Personal details</p>
+    <div>
+      <button mat-button matStepperNext> Next</button>
+    </div>
+  </mat-step>
+  <mat-step label="Education" completed=true>
+    <p> Education Details</p>
+    <div>
+      <button mat-button matStepperNext> Next</button>
+      <button mat-button matStepperPrevious> Back</button>
+
+    </div>
+  </mat-step>
+   <mat-step label="Upload Resume" completed=true>
+     <p>Upload Resume</p>
+     <div>
+      <button mat-button matStepperNext> Next</button>
+      <button mat-button matStepperPrevious> Back</button>
+
+    </div>
+   </mat-step>
+</mat-horizontal-stepper>  -->
+
+ 
+
+
+
+
+<h3 class="text-center mt-3">Master Mind Solutions Requirment</h3>
+
+<div *ngFor="let v of jobs1">
+<div class="container jumbotron mt-5">
+    <div class="card">
+        <div class="card-header">
+           {{v.jobtitle}}
+        </div>
+        <div class="card-body">
+            <h6 class="text-info">Master Minds Solutions</h6>  <br>
+             <div class="row">
+              <i class="fa fa-map-marker ml-4" aria-hidden="true">{{v.Qualification}}</i> 
+              <i class="fa fa-map-marker ml-5 " aria-hidden="true"> {{v.Location}}</i> 
+              <i class="fa fa-inr ml-5" aria-hidden="true">{{v.Package}}</i>
+             </div>
+             <div>
+              <i class="fa fa-file-text-o  ml-2 mr-3 mt-2" aria-hidden="true"></i>{{v.description}}
+            </div>
+        </div>
+        <div class="card-footer">
+          <!-- <h6 class="text-left">Posted : 2 days ago</h6> -->
+            <button class="bg-info text-white float-right" (click)="openapp()" >Apply</button>
+        </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- data-toggle="modal" data-target="#myModal" -->
+<!-- 
+  modal coding
+        The Modal
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+          <div class="modal-content">
+      
+            Modal Header
+            <div class="modal-header">
+              <h6 class="modal-title">Fill in your details below.</h6>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            Modal body
+            <div class="modal-body ">
+              <form #ref="ngForm" action="/APIS/stdfiles" (ngSubmit)="submitmodal(ref.value)">
+                <mat-horizontal-stepper linear>
+                  <mat-step label="Personal details" >
+                    <p>Personal details</p>
+                    <div class="row">
+                       <label class="col-4" for="en">Full Name:</label>
+                       <input class="col-3" type="text" id="en" name="name" ngModel required>
+                   </div>
+                   <div>
+                    <button  type="button" mat-button matStepperNext> Next</button>
+                  </div>
+                  </mat-step> <br>
+
+                  <mat-step label="Education">
+                    <p> Education Details</p>
+                    <div class="row">
+                      <label class="col-4" for="ed">Education:</label>
+                      <input  class="col-3" type="text" id="ed" name="study" ngModel required>
+                      <label class="col-2" for="br">Branch:</label>
+                      <select class="col-2" name="branch" id="br"  ngModel>
+                          <option value="EEE">EEE</option>
+                          <option value="MEC">MEC</option>
+                          <option value="ECE">ECE</option>
+                          <option value="CSE">CSE</option>
+                        </select>
+                  </div>
+                    <div>
+                      <button type="button" mat-button matStepperNext> Next</button>
+                      <button type="button" mat-button matStepperPrevious> Back</button>
+                  </div>
+                  </mat-step>
+                        <br>
+
+                        <mat-step label="Upload Resume">
+                          <p>Upload Resume</p>
+                          <div class="row">
+                            <label class="col-4" for="fl">Upload Resume:</label>
+                            <input  class="col-4" type="file" id="fl" name="image" ngModel>
+                        </div>
+                          <div>
+                           <button type="button" mat-button matStepperNext> Next</button>
+                           <button type="button" mat-button matStepperPrevious> Back</button>
+                         </div>
+                  
+      
+            Modal footer
+            <div class="modal-footer">
+              <button type="submit" id="n" class="btn btn-danger" >Apply</button>
+            </div>
+          </mat-step>
+
+          </mat-horizontal-stepper> 
+
+        </form>
+        </div>
+
+        </div>
+    </div>
+</div> -->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
